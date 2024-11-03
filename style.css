@@ -3,9 +3,9 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #e6e1e1;
+    background-color: #e8edef;
     overflow-x: hidden;
-    background-image: url(https://wallpaperaccess.com/full/5651990.jpg);
+    /* background-image: url(https://wallpaperaccess.com/full/5651990.jpg); */
     /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,7 +73,7 @@ header nav ul li a {
     /* height: 500px; */
     /* box-shadow: 0 0 3px rgb(40, 40, 40); */
     color: #141414;
-    color: #fff;
+    /* color: #fff; */
 
     /* border: 1px solid rgba(59, 59, 58, 0.059); */
     padding: 5px;
@@ -103,16 +103,20 @@ header nav ul li a {
     min-height: 440px;
     max-height: 500px;
 
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
     /* box-shadow: 0 0 5px rgb(40, 40, 40); */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     /* background-color: #02021b; */
     margin-left: 30px;
     /* background-image: url(https://img.freepik.com/premium-photo/bookworms-haven-flat-lay-illustration-generative-ai_549702-707.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom; */
+    overflow-y: auto;
+
 }
 
 #myPhoto img {
@@ -154,9 +158,14 @@ p {
    letter-spacing: 1px;
     width: 100%;
     padding: 10px;
-    border-left: 1px solid rgba(29, 28, 28, 0.24);
+    /* border-left: 1px solid rgba(29, 28, 28, 0.24); */
+    border: 1px solid rgba(29, 28, 28, 0.596);
     font-size: 18px;
     font-weight: 100;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 500px;
+
 
 
 
@@ -175,6 +184,7 @@ p {
     display: flex;
     justify-content: end;
     align-items: center;
+    margin-right: 5px;
 }
 
 .lets a {
@@ -227,7 +237,8 @@ footer p {
     height: 190px;
     width: 190px;
     border: 1px solid;
-
+    min-width: 190px;
+    min-height: 190px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -277,3 +288,5 @@ footer p {
         margin: 0 0.5rem;
     }
 }
+
+

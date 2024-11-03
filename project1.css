@@ -1,0 +1,336 @@
+
+
+
+
+.project1 , .project2{
+    /* border: 2px solid red; */
+    /* height: 80vh; */
+    /* display: grid; */
+    /* grid-template-columns: 3fr 2fr; */
+    margin-top: 20px;
+    /* border: 2px solid rgba(0, 0, 0, 0.192); */
+    padding-top: 20px;
+    border-radius: 10px;
+    height: 80%;
+    padding-bottom: 120px;
+
+}
+
+#imagesP1 , #imagesP2{
+
+   
+    width: 90%;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0px 4px;
+    border-radius: 7px;
+
+
+}
+
+#imagesP2{
+    width: 100%;
+}
+
+
+#hor-img,
+#ver-img {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 2px;
+    border-radius: 7px;
+
+}
+
+
+
+#ver-img{
+    position: absolute;
+    right: -65px;
+    top: 35px;
+    max-width: 400px;
+    min-width: 90px;
+    width: 34%;
+    margin-right: 10px;
+
+}
+
+#discr1 ,#discr2 {
+    /* border: 3px solid red; */
+    flex-grow: 1;
+    /* display: inline-block; */
+    width: 100%;
+    margin-top: 50px;
+    /* vertical-align: top; */
+    /* margin-left: 4px; */
+    /* box-shadow: 0 0 1px; */
+    /* border-radius: 7px; */
+    padding: 5px;
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 20px;
+
+}
+
+
+
+/* General animation styles */
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project1, .project2 {
+    opacity: 0;
+    animation: fadeInSlideUp 1s ease forwards;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Delays for staggered effect */
+.project1 {
+    animation-delay: 0.2s;
+}
+
+.project2 {
+    animation-delay: 0.4s;
+}
+
+
+
+
+#discr1 a , #discr2 a {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeInSlideUp 0.5s ease forwards;
+    animation-delay: 0.8s;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+#discr1 a:hover , #discr2 a:hover {
+    transform: scale(1.05);
+    background-color: rgba(57, 202, 57, 0.2);
+}
+
+
+
+
+
+
+
+
+#hor-imgg,
+#ver-imgg {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 2px;
+    border-radius: 7px;
+
+}
+
+.ver-imgg-cont {
+    height: 90%;
+    width: 30%;
+    position: absolute;
+    top: -30%;
+    right: 5%;
+    box-shadow: 0 0 3px;
+    border-radius: 7px;
+
+}
+
+
+
+
+/* Initial hidden state */
+.i1 , .d1 , .i2, .d2{
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+
+.i1 , .i2{
+    transform: translate(-40px , 40px);
+
+}
+
+.d1 , .d2{
+    transform: translate(40px , 30px); 
+}
+
+
+
+/* Slide-in from left */
+.slide-in-left {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Slide-in from right */
+.slide-in-right {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+@media(max-width:580px){
+    .name{
+        display: none;
+    }
+
+    .info{
+        margin: 0 auto;
+    }
+
+    header{
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: inline;
+        margin: 0 0.5rem;
+    }
+}
+
+
+
+.chenging{
+    display: none;
+}
+
+
+.activeChange{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+}
+
+
+
+.chenging {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    font-size: 15px;
+    transition: 400ms;
+}
+
+
+
+ul {
+    list-style-type: disc;
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 14px;
+
+}
+
+li strong {
+    font-size: 16px;
+}
+
+#skills h2{
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.chenging {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+} */
+
+
+#contact{
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    flex-direction: row;
+    align-items: end;
+}
+.chenging a {
+    color: #2063a6;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #14aae1;
+    transform: scale(1.06);
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Thin scrollbar styling for WebKit browsers */
+#myPhoto::-webkit-scrollbar {
+    width: 5px; 
+}
+
+
+#myPhoto::-webkit-scrollbar-thumb {
+    background: #4b4b4b; /* Color of the scrollbar */
+    
+}
+
+
+#myPhoto::-webkit-scrollbar-track {
+    background: #e7e4e4; /* Track color */
+   
+}
+
+
+
+
+
+#intro::-webkit-scrollbar {
+    width: 8px; 
+}
+
+#intro::-webkit-scrollbar-track {
+    background: #e9e5e5; /* Track color */
+}
+
+#intro::-webkit-scrollbar-thumb {
+    background: #4b4b4b; /* Color of the scrollbar */
+}
+
+
+
+
