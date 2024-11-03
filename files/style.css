@@ -198,6 +198,7 @@ footer p {
         min-width: fit-content;
         max-width: none;
         padding-bottom: 10px;
+        width: 100%;
     }
 
     #intro {
@@ -206,7 +207,20 @@ footer p {
         width: auto;
         margin-top: 20px;
         border-radius: 10px;
+        background-color: rgba(253, 253, 253, 0);
+
     }
+
+    .about-section{
+        padding: 100px 0;
+        margin: 0;
+    }
+
+    .chenging{
+        padding: 0;
+    }
+
+
 }
 
 @media(max-width: 580px) {

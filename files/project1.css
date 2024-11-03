@@ -212,6 +212,14 @@
 
 .chenging{
     display: none;
+
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    font-size: 15px;
+    transition: 400ms;
+    color: rgb(239, 234, 234);
 }
 
 
@@ -221,22 +229,15 @@
     justify-content: end;
     animation: fadeInSlideUp 0.5s ease forwards;
     transition: transform 0.3s, background-color 0.3s;
-    color: #141414;
+    padding: 0;
+
 
     
 }
 
 
 
-.chenging {
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    line-height: 1.6;
-    font-size: 15px;
-    transition: 400ms;
-    color: rgb(239, 234, 234);
-}
+
 
 
 
