@@ -5,7 +5,12 @@ body {
     padding: 0;
     background-color: #e6e1e1;
     overflow-x: hidden;
-
+    background-image: url(https://wallpaperaccess.com/full/5651990.jpg);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: brightness(0.88);
+   /* border: 2px solid red; */
 }
 
 * {
@@ -17,6 +22,12 @@ body {
 
 .main-container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+
+    
 }
 
 
@@ -58,11 +69,17 @@ header nav ul li a {
 #sortIntro {
     display: flex;
     overflow: hidden;
-    padding: 8% 20px;
-    gap: 0 5%;
-    height: 500px;
-    box-shadow: 0 0 3px rgb(40, 40, 40);
+    gap: 0 40px;
+    /* height: 500px; */
+    /* box-shadow: 0 0 3px rgb(40, 40, 40); */
     color: #141414;
+    color: #fff;
+
+    /* border: 1px solid rgba(59, 59, 58, 0.059); */
+    padding: 5px;
+    /* box-shadow: 0 0 1px; */
+    border-radius: 10px;
+
 
 
 }
@@ -70,26 +87,40 @@ header nav ul li a {
 
 
 .about-section {
-    margin-top: 10px;
+    margin-top: 40px;
+    padding: 100px 20px;
+
 }
 
 #myPhoto {
 
     overflow: hidden;
     /* border: 2px solid rgb(255, 0, 0); */
-    min-width: 280px;
+    min-width: 270px;
+    width: 40%;
+    max-width: 300px;
     /* height: calc(100%-100px); */
+    min-height: 440px;
+    max-height: 500px;
 
     border-radius: 10px;
-    box-shadow: 0 0 5px rgb(40, 40, 40);
-
+    /* box-shadow: 0 0 5px rgb(40, 40, 40); */
+    display: flex;
+    justify-content: center;
+    /* background-color: #02021b; */
+    margin-left: 30px;
+    /* background-image: url(https://img.freepik.com/premium-photo/bookworms-haven-flat-lay-illustration-generative-ai_549702-707.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom; */
 }
 
 #myPhoto img {
 
-    height: 130%;
+    /* height: 130%; */
     border-radius: 10px;
-
+    scale: 3;
+    margin-bottom: 65px;
 
 
 
@@ -120,11 +151,12 @@ p {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    border: 1px solid rgba(79, 78, 77, 0.059);
+   letter-spacing: 1px;
     width: 100%;
     padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 1px;
+    border-left: 1px solid rgba(29, 28, 28, 0.24);
+    font-size: 18px;
+    font-weight: 100;
 
 
 
@@ -188,4 +220,60 @@ footer p {
     /* Hover color */
     transform: scale(1.2);
     /* Slightly enlarges icon on hover */
+}
+
+
+#circleImg{
+    height: 190px;
+    width: 190px;
+    border: 1px solid;
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+
+@media(max-width: 760px){
+#sortIntro{
+    flex-direction: column;
+    height: fit-content;
+}
+
+#myPhoto{
+    min-block-size: auto;
+    width: 100%;
+    margin: 0;
+    min-width: fit-content;
+        max-width: none;
+        padding-bottom: 10px;
+
+}
+
+#intro{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.21);
+    width: auto;
+}
+}
+
+@media(max-width:580px){
+    .name{
+        display: none;
+    }
+
+    .info{
+        margin: 0 auto;
+    }
+
+    header{
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: inline;
+        margin: 0 0.5rem;
+    }
 }
