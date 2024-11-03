@@ -9,7 +9,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: brightness(0.988);
-    min-width: 270px;
+    /* min-width: 270px; */
 }
 
 * {
@@ -82,8 +82,8 @@ header nav ul li a {
     align-items: center;
     margin-left: 30px;
     overflow-y: auto;
-    box-shadow: 0 0 3px #e9e9e7;
-    background: #f0f0f01a;
+    /* box-shadow: 0 0 3px #e9e9e7; */
+    /* background: #f0f0f01a; */
 }
 
 #myPhoto img {
@@ -97,7 +97,7 @@ h1 {
     line-height: 1.4;
 }
 
-h2 {
+h2,h3 {
     font-size: 24px;
     line-height: 2;
 }
@@ -198,7 +198,9 @@ footer p {
         min-width: fit-content;
         max-width: none;
         padding-bottom: 10px;
-        width: 100%;
+        width: calc(100% - 20px);
+        box-shadow: 0 0 3px #e9e9e7;
+        background: #f0f0f01a;
     }
 
     #intro {
@@ -220,6 +222,12 @@ footer p {
         padding: 0;
     }
 
+ 
+    #ver-img{
+        right: -28;
+        min-height: 50px;
+        width: 34%;
+    }
 
 }
 
