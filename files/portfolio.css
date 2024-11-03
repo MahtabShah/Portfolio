@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e8edef;
+    overflow-x: hidden;
+    /* background-image: url(https://wallpaperaccess.com/full/5651990.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: brightness(0.988);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-weight: 200; */
+}
+
+.main-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: end;
+}
+
+header {
+    background: #030112;
+    color: #fff;
+    padding: 0px 40px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 200;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1.2rem;
+}
+
+header nav ul li a {
+    color: #ece4e4;
+    text-decoration: none;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-media {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-media a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #766ff9;
+    transform: scale(1.2);
+}
+

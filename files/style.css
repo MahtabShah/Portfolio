@@ -5,19 +5,16 @@ body {
     padding: 0;
     background-color: #e8edef;
     overflow-x: hidden;
-    /* background-image: url(https://wallpaperaccess.com/full/5651990.jpg); */
-    /* background-position: center; */
+    background-image: url(https://wallpaperaccess.com/full/5651990.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: brightness(0.88);
-   /* border: 2px solid red; */
+    backdrop-filter: brightness(0.988);
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-weight: 200;
-
+    /* font-weight: 200; */
 }
 
 .main-container {
@@ -25,11 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   
-
-    
 }
-
 
 header {
     background: #030112;
@@ -39,16 +32,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 2px solid red; */
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 200;
-
-
 }
-
 
 header nav ul {
     list-style: none;
@@ -65,122 +54,80 @@ header nav ul li a {
     text-decoration: none;
 }
 
-
 #sortIntro {
     display: flex;
     overflow: hidden;
     gap: 0 40px;
-    /* height: 500px; */
-    /* box-shadow: 0 0 3px rgb(40, 40, 40); */
-    color: #141414;
-    /* color: #fff; */
-
-    /* border: 1px solid rgba(59, 59, 58, 0.059); */
+    color: #fff;
     padding: 5px;
-    /* box-shadow: 0 0 1px; */
     border-radius: 10px;
-
-
-
 }
-
-
 
 .about-section {
     margin-top: 40px;
     padding: 100px 20px;
-
 }
 
 #myPhoto {
-
     overflow: hidden;
-    /* border: 2px solid rgb(255, 0, 0); */
-    min-width: 270px;
-    width: 40%;
+    width: 70%;
     max-width: 300px;
-    /* height: calc(100%-100px); */
     min-height: 440px;
     max-height: 500px;
-
     border-radius: 10px 0 0 10px;
     padding: 10px;
-    /* box-shadow: 0 0 5px rgb(40, 40, 40); */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: #02021b; */
     margin-left: 30px;
-    /* background-image: url(https://img.freepik.com/premium-photo/bookworms-haven-flat-lay-illustration-generative-ai_549702-707.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom; */
     overflow-y: auto;
-
+    box-shadow: 0 0 3px #e9e9e7;
+    background: #f0f0f01a;
 }
 
 #myPhoto img {
-
-    /* height: 130%; */
     border-radius: 10px;
-    scale: 3;
+    scale: 4;
     margin-bottom: 65px;
-
-
-
 }
 
 h1 {
     font-size: 40px;
     line-height: 1.4;
-    /* text-align: center; */
-
 }
 
 h2 {
     font-size: 24px;
-    /* text-align: center; */
     line-height: 2;
-
 }
 
 p {
-    /* text-align: center; */
     margin-top: 20px;
 }
 
 #intro {
-
-    /* border: 2px solid palevioletred; */
     display: flex;
     flex-direction: column;
     gap: 30px;
-   letter-spacing: 1px;
+    letter-spacing: 1px;
     width: 100%;
     padding: 10px;
-    /* border-left: 1px solid rgba(29, 28, 28, 0.24); */
-    border: 1px solid rgba(29, 28, 28, 0.596);
     font-size: 18px;
     font-weight: 100;
     overflow-y: auto;
     overflow-x: hidden;
     max-height: 500px;
-
-
-
-
+    box-shadow: 0 0 3px #e9e9e7;
+    background: #f0f0f01a;
 }
 
 .intro-container {
     border: 2px;
-    /* border: 1px solid red; */
     width: 100%;
-
 }
 
 .lets {
     position: relative;
-    /* border: 1px solid red; */
     display: flex;
     justify-content: end;
     align-items: center;
@@ -192,17 +139,13 @@ p {
     text-decoration: none;
     color: white;
     padding: 10px 20px;
-
 }
-
-
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 20px 10px;
-    /* Padding for the footer */
     font-size: 14px;
 }
 
@@ -215,7 +158,6 @@ footer p {
     display: flex;
     justify-content: center;
     gap: 15px;
-    /* Space between icons */
 }
 
 .social-media a {
@@ -227,13 +169,10 @@ footer p {
 
 .social-media a:hover {
     color: #766ff9;
-    /* Hover color */
     transform: scale(1.2);
-    /* Slightly enlarges icon on hover */
 }
 
-
-#circleImg{
+#circleImg {
     height: 190px;
     width: 190px;
     border: 1px solid;
@@ -246,40 +185,39 @@ footer p {
     overflow: hidden;
 }
 
+@media(max-width: 760px) {
+    #sortIntro {
+        flex-direction: column;
+        height: fit-content;
+    }
 
-@media(max-width: 760px){
-#sortIntro{
-    flex-direction: column;
-    height: fit-content;
-}
-
-#myPhoto{
-    min-block-size: auto;
-    width: 100%;
-    margin: 0;
-    min-width: fit-content;
+    #myPhoto {
+        min-block-size: auto;
+        margin: 0 auto;
+        min-width: fit-content;
         max-width: none;
         padding-bottom: 10px;
+    }
 
+    #intro {
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.21);
+        width: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
 }
 
-#intro{
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.21);
-    width: auto;
-}
-}
-
-@media(max-width:580px){
-    .name{
+@media(max-width: 580px) {
+    .name {
         display: none;
     }
 
-    .info{
+    .info {
         margin: 0 auto;
     }
 
-    header{
+    header {
         padding: 0;
     }
 
@@ -288,5 +226,3 @@ footer p {
         margin: 0 0.5rem;
     }
 }
-
-

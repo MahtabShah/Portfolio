@@ -112,11 +112,20 @@
     animation: fadeInSlideUp 0.5s ease forwards;
     animation-delay: 0.8s;
     transition: transform 0.3s, background-color 0.3s;
+
+    color: #0026ff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    border: 1px solid;
+    border-radius: 4px;
+    background: #afbff5;
 }
 
 #discr1 a:hover , #discr2 a:hover {
     transform: scale(1.05);
     background-color: rgba(57, 202, 57, 0.2);
+    
 }
 
 
@@ -210,6 +219,10 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
+    animation: fadeInSlideUp 0.5s ease forwards;
+    transition: transform 0.3s, background-color 0.3s;
+    color: #141414;
+
     
 }
 
@@ -222,6 +235,7 @@
     line-height: 1.6;
     font-size: 15px;
     transition: 400ms;
+    color: rgb(239, 234, 234);
 }
 
 
@@ -243,7 +257,7 @@ li strong {
 }
 
 #skills h2{
-    color: rgb(0, 0, 0);
+    color: rgb(239, 230, 230);
 }
 
 
@@ -280,11 +294,13 @@ li strong {
     flex-direction: row;
     align-items: end;
 }
+
 .chenging a {
-    color: #2063a6;
+   
     font-size: 24px;
     text-decoration: none;
     transition: color 0.3s ease;
+   
 }
 
 a:hover {
@@ -324,7 +340,7 @@ a:hover {
 }
 
 #intro::-webkit-scrollbar-track {
-    background: #e9e5e5; /* Track color */
+    background: #9be; /* Track color */
 }
 
 #intro::-webkit-scrollbar-thumb {
