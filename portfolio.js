@@ -35,3 +35,10 @@ window.addEventListener('scroll', ()=>{
     handleScroll(i2 , d2);
 
 })
+
+const i1= document.getElementById('imagesP1');
+    const d1 = document.getElementById('discr1');
+    const i2 = document.getElementById('imagesP2');
+    const d2 = document.getElementById('discr2');
+    handleScroll(i1 , d1);
+    handleScroll(i2 , d2);

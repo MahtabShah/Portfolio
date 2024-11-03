@@ -3,9 +3,24 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f2f2f6;
     overflow-x: hidden;
+    /* background-image: url(https://wallpaperaccess.com/full/5651990.jpg); */
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: brightness(0.88);
+   /* border: 2px solid red; */
+}
 
+.main-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+
+    
 }
 
 * {
@@ -13,6 +28,8 @@ body {
     padding: 0;
     font-weight: 200;
     /* box-sizing: border-box; */
+
+
 
 }
 
@@ -24,8 +41,8 @@ body {
 header {
     background: #030112;
     color: #fff;
-    padding: 0px 10px;
-    height: 50px;
+    padding: 0px 40px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,6 +73,8 @@ header nav ul li a {
 }
 
 
+
+
 #sortIntro {
     display: flex;
     overflow: hidden;
@@ -71,30 +90,11 @@ header nav ul li a {
     /* border: 2px solid red; */
     width: calc(100% - 100px);
     padding: 10px;
-    color: #dedede;
+    color: #0f0e0e;
 
 }
 
-#myPhoto {
 
-    overflow: hidden;
-    /* border: 2px solid rgb(255, 0, 0); */
-    min-width: 300px;
-    /* height: calc(100%-100px); */
-
-    border-radius: 10px;
-    box-shadow: 0 0 3px rgb(40, 40, 40);
-
-}
-
-#myPhoto img {
-
-    height: 130%;
-    border-radius: 10px;
-
-
-
-}
 
 h1 {
     font-size: 40px;
@@ -113,42 +113,9 @@ h2 {
 p {
     /* text-align: center; */
     margin-top: 20px;
+    color: #131212;
 }
 
-#intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    /* border: 2px solid palevioletred; */
-    /* margin-right: 10%; */
-    flex-grow: 1;
-
-
-}
-
-#talk {
-
-    width: 140px;
-    height: 40px;
-    color: black;
-    /* border: 2px solid red; */
-    margin-bottom: 4dvb;
-    border-radius: 7px;
-    background-color: rgb(57, 202, 57);
-}
-
-#aboutMe {
-    border: 1px solid rgba(146, 143, 143, 0.148);
-    flex-grow: 1;
-    text-align: justify;
-    padding: 6px 14px;
-    overflow: hidden;
-    color: #dedede;
-
-
-
-}
 
 
 
@@ -275,7 +242,7 @@ header .info nav ul li a:hover {
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
-    color: #dedede;
+    color: #0f0e0e;
     margin-top: 50px;
 
 }
@@ -285,50 +252,11 @@ header .info nav ul li a:hover {
     display: flex;
     gap: 20px;
     width: 100%;
-    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 
 }
 
-#myPhoto {
-    flex: 1 1 200px;
-    max-width: 250px;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
-#myPhoto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#intro {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#intro h1 {
-    font-size: 28px;
-    color: #e6e0e0;
-    margin-bottom: 5px;
-}
-
-#intro h2 {
-    font-size: 20px;
-    color: #d8d1d1;
-    font-weight: normal;
-}
-
-#intro p {
-    color: #d8d4d4;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: justify;
-
-}
 
 
 
@@ -341,14 +269,14 @@ header .info nav ul li a:hover {
 #aboutMe {
     margin-top: 30px;
     line-height: 1.6;
-    color: #101010;
+    color: #0a0a0a;
     font-size: 16px;
 }
 
 #aboutMe p {
     margin-bottom: 15px;
     text-align: justify;
-    color: #dedede;
+    color: #0d0c0c;
 
 }
 
@@ -481,7 +409,7 @@ header .info nav ul li a:hover {
 /* Image animations */
 #imagesP1 img , #imagesP2 img{
     opacity: 0;
-    animation: fadeInSlideUp 1s ease forwards;
+    animation: fadeInSlideUp 0.7s ease forwards;
 }
 
 #imagesP1 img#hor-img , #imagesP2 img#hor-img{
@@ -546,17 +474,17 @@ header .info nav ul li a:hover {
 /* Initial hidden state */
 .i1 , .d1 , .i2, .d2{
     opacity: 0;
-    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
 
 
 .i1 , .i2{
-    transform: translate(-60px , 60px);
+    transform: translate(-40px , 40px);
 
 }
 
 .d1 , .d2{
-    transform: translate(60px , 50px); 
+    transform: translate(40px , 30px); 
 }
 
 
@@ -571,4 +499,24 @@ header .info nav ul li a:hover {
 .slide-in-right {
     opacity: 1;
     transform: translateX(0);
+}
+
+
+@media(max-width:580px){
+    .name{
+        display: none;
+    }
+
+    .info{
+        margin: 0 auto;
+    }
+
+    header{
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: inline;
+        margin: 0 0.5rem;
+    }
 }
