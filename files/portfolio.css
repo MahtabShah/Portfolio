@@ -8,7 +8,7 @@ body {
     /* background-image: url(https://wallpaperaccess.com/full/5651990.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: brightness(0.988);
+    /* backdrop-filter: brightness(0.988); */
 }
 
 * {
