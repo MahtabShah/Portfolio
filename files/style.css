@@ -241,6 +241,9 @@ footer p {
         width: 34%;
     }
 
+    .intro-container h1{
+
+        text-align: center;
 }
 
 @media(max-width: 580px) {
