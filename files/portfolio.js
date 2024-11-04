@@ -54,6 +54,7 @@ arr.forEach(e => {
 
         document.getElementById('myPhoto').append(document.querySelector('.shift'));
         document.getElementById('myPhoto').style.border = `1px solid #BF2EF0`;
+        document.querySelector('.intro-container h1').style.textAlign = `center`;
 
         // document.getElementById('intro').style.background = `#9bed`;
 
