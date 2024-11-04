@@ -3,7 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #567;
+    background-color: #eeeeee;
     overflow-x: hidden;
 /*     background-image: url(https://wallpaperaccess.com/full/5651990.jpg); */
     background-repeat: no-repeat;
@@ -59,7 +59,7 @@ header nav ul li a {
     display: flex;
     overflow: hidden;
     gap: 0 40px;
-    color: #fff;
+/*     color: #fff; */
     padding: 5px;
     border-radius: 10px;
 }
@@ -137,7 +137,7 @@ p {
 }
 
 .lets a {
-    background-color:     background: #BF2EF0;
+    background: #BF2EF0;
     text-decoration: none;
     color: white;
     padding: 10px 20px;
@@ -145,6 +145,8 @@ p {
 
 footer {
     background-color: #333;
+    background: #BF2EF0;
+    
     color: white;
     text-align: center;
     padding: 20px 10px;
