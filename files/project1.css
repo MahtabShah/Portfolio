@@ -1,7 +1,4 @@
 
-
-
-
 .project1 , .project2{
     /* border: 2px solid red; */
     /* height: 80vh; */
@@ -119,7 +116,7 @@
     transition: color 0.3s ease;
     border: 1px solid;
     border-radius: 4px;
-    background: #afbff5;
+    /* background: #afbff5; */
 }
 
 #discr1 a:hover , #discr2 a:hover {
@@ -215,11 +212,11 @@
 
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     line-height: 1.6;
     font-size: 15px;
     transition: 400ms;
-    color: rgb(239, 234, 234);
+    /* color: rgb(239, 234, 234); */
 }
 
 
@@ -258,7 +255,7 @@ li strong {
 }
 
 #skills h2{
-    color: rgb(239, 230, 230);
+    /* color: rgb(239, 230, 230); */
 }
 
 
@@ -341,7 +338,7 @@ a:hover {
 }
 
 #intro::-webkit-scrollbar-track {
-    background: #9be; /* Track color */
+    background: #ed24ff; /* Track color */
 }
 
 #intro::-webkit-scrollbar-thumb {

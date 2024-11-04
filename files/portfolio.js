@@ -53,7 +53,7 @@ arr.forEach(e => {
     e.addEventListener('click', () => {
 
         document.getElementById('myPhoto').append(document.querySelector('.shift'));
-        document.getElementById('myPhoto').style.border = `1px solid #222`;
+        document.getElementById('myPhoto').style.border = `1px solid #BF2EF0`;
 
         // document.getElementById('intro').style.background = `#9bed`;
 
