@@ -3,10 +3,14 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #e8edef;
+    background-color: #eeeeee;
     overflow-x: hidden;
+<<<<<<< HEAD
     /* background-image: url(https://wallpaperaccess.com/full/5651990.jpg); */
     background-color: #f3efef;
+=======
+/*     background-image: url(https://wallpaperaccess.com/full/5651990.jpg); */
+>>>>>>> 80c38b99f42697bbcb4969e10ac9a739b8ae9cfa
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: brightness(0.988);
@@ -27,8 +31,12 @@ body {
 }
 
 header {
+<<<<<<< HEAD
     background: #030112;
     background-color: #BF2EF0;
+=======
+    background: #BF2EF0;
+>>>>>>> 80c38b99f42697bbcb4969e10ac9a739b8ae9cfa
     color: #fff;
     padding: 0px 40px;
     height: 80px;
@@ -62,7 +70,11 @@ header nav ul li a {
     display: flex;
     overflow: hidden;
     gap: 0 40px;
+<<<<<<< HEAD
     /* color: #fff; */
+=======
+/*     color: #fff; */
+>>>>>>> 80c38b99f42697bbcb4969e10ac9a739b8ae9cfa
     padding: 5px;
     border-radius: 10px;
 }
@@ -108,6 +120,7 @@ h2,h3 {
 
 p {
     margin-top: 20px;
+ 
 }
 
 #intro {
@@ -142,8 +155,12 @@ p {
 }
 
 .lets a {
+<<<<<<< HEAD
     background-color: rgb(61, 72, 176);
     background-color: #BF2EF0;
+=======
+    background: #BF2EF0;
+>>>>>>> 80c38b99f42697bbcb4969e10ac9a739b8ae9cfa
     text-decoration: none;
     color: white;
     padding: 10px 20px;
@@ -151,8 +168,13 @@ p {
 
 footer {
     background-color: #333;
+<<<<<<< HEAD
     background-color: #BF2EF0;
 
+=======
+    background: #BF2EF0;
+    
+>>>>>>> 80c38b99f42697bbcb4969e10ac9a739b8ae9cfa
     color: white;
     text-align: center;
     padding: 20px 10px;
@@ -201,7 +223,7 @@ footer p {
         height: fit-content;
     }
 
-    #myPhoto {
+ #myPhoto {
         min-block-size: auto;
         margin: 0 auto;
         min-width: fit-content;

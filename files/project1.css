@@ -338,12 +338,13 @@ a:hover {
 }
 
 #intro::-webkit-scrollbar-track {
-    background: #ed24ff; /* Track color */
+    /* background: #ed24ff; Track col */
 }
 
 #intro::-webkit-scrollbar-thumb {
     background: #4b4b4b; /* Color of the scrollbar */
 }
+
 
 
 
