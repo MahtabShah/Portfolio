@@ -27,22 +27,27 @@ function handleScroll(imagesP1, discr1) {
 // Attach the scroll event listener
 document.getElementById('intro').addEventListener('scroll', () => {
 
-    const i1 = document.getElementById('imagesP1');
-    const d1 = document.getElementById('discr1');
-    const i2 = document.getElementById('imagesP2');
-    const d2 = document.getElementById('discr2');
-    handleScroll(i1, d1);
-    handleScroll(i2, d2);
+    const ies = document.querySelectorAll('.i');
+    const des = document.querySelectorAll('.d');
+    let c = 0;
+   
+    ies.forEach(i=>{
+        handleScroll(i, des[c++]);
+
+    })
+
 
 })
 
-const i1 = document.getElementById('imagesP1');
-const d1 = document.getElementById('discr1');
-const i2 = document.getElementById('imagesP2');
-const d2 = document.getElementById('discr2');
-handleScroll(i1, d1);
-handleScroll(i2, d2);
 
+const ies = document.querySelectorAll('.i');
+const des = document.querySelectorAll('.d');
+let c = 0;
+
+ies.forEach(i=>{
+    handleScroll(i, des[c++]);
+
+})
 
 
 let projects = document.querySelector('.projects');

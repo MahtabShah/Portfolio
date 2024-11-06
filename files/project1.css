@@ -1,23 +1,21 @@
 
-.project1 , .project2{
+.p{
     margin-top: 20px;
     /* border: 2px solid rgba(0, 0, 0, 0.192); */
     padding-top: 20px;
-    border-radius: 10px;
     height: 80%;
     padding-bottom: 120px;
 
 }
 
-#imagesP1 , #imagesP2{
+.i{
 
    
-    width: 90%;
+    /* width: 90%; */
     position: relative;
     display: inline-block;
     vertical-align: top;
     padding: 0px 4px;
-    border-radius: 7px;
 
 
 }
@@ -27,12 +25,10 @@
 }
 
 
-#hor-img,
-#ver-img {
+.i > img{
     height: 100%;
     width: 100%;
     box-shadow: 0 0 2px;
-    border-radius: 7px;
 
 }
 
@@ -40,16 +36,16 @@
 
 #ver-img{
     position: absolute;
-    right: -65px;
+    right: -2rem;
     top: 35px;
-    max-width: 400px;
+    max-width: 300px;
     min-width: 90px;
     width: 34%;
     margin-right: 10px;
 
 }
 
-#discr1 ,#discr2 {
+.d {
     /* border: 3px solid red; */
     flex-grow: 1;
     width: 100%;
@@ -76,25 +72,19 @@
     }
 }
 
-.project1, .project2 {
+.p{
     opacity: 0;
     animation: fadeInSlideUp 1s ease forwards;
     padding: 20px;
     margin: 10px;
-}
+    animation-delay: 0.3s;
 
-.project1 {
-    animation-delay: 0.2s;
-}
-
-.project2 {
-    animation-delay: 0.4s;
 }
 
 
 
 
-#discr1 a , #discr2 a {
+.d a {
     display: inline-block;
     opacity: 0;
     animation: fadeInSlideUp 0.5s ease forwards;
@@ -110,7 +100,7 @@
     /* background: #afbff5; */
 }
 
-#discr1 a:hover , #discr2 a:hover {
+.d a:hover {
     transform: scale(1.05);
     background-color: rgba(241, 70, 250, 0.895);
     color: white;
@@ -124,8 +114,7 @@
 
 
 
-#hor-imgg,
-#ver-imgg {
+.i>img{
     height: 100%;
     width: 100%;
     box-shadow: 0 0 2px;
@@ -133,32 +122,23 @@
 
 }
 
-.ver-imgg-cont {
-    height: 90%;
-    width: 30%;
-    position: absolute;
-    top: -30%;
-    right: 5%;
-    box-shadow: 0 0 3px;
-    border-radius: 7px;
-
-}
 
 
 
 
-.i1 , .d1 , .i2, .d2{
+
+.i, .d{
     opacity: 0;
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
 
 
-.i1 , .i2{
+.i{
     transform: translate(-40px , 40px);
 
 }
 
-.d1 , .d2{
+.d{
     transform: translate(40px , 30px); 
 }
 
@@ -200,7 +180,7 @@
     display: none;
 
     padding: 30px;
-    border-radius: 8px;
+    border-radius: 4px;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     line-height: 1.6;
     font-size: 15px;
@@ -256,25 +236,12 @@ li strong {
 
 
 
-
-
-/* 
-.chenging {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    padding: 20px;
-    background-color: #f1f1f1;
-    border-radius: 8px;
-} */
-
-
 #contact{
     gap: 15px;
     justify-content: center;
     padding: 20px;
     background-color: #f1f1f1;
-    border-radius: 8px;
+    border-radius: 5px;
     flex-direction: row;
     align-items: end;
 }
