@@ -54,7 +54,6 @@ document.getElementById('intro').addEventListener('scroll', () => {
 
 
 
-
 ies.forEach(i => {
 
     handleScroll(i);
