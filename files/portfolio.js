@@ -8,7 +8,7 @@ function isInViewport(element) {
 }
 
 // Function to handle the scroll event
-function handleScroll(imagesP1, discr1) {
+function handleScroll(imagesP1) {
 
     if (isInViewport(imagesP1)) {
         imagesP1.classList.add('slide-in-left');
@@ -16,38 +16,55 @@ function handleScroll(imagesP1, discr1) {
         imagesP1.classList.remove('slide-in-left');
 
     }
+
+}
+
+
+function handlediscr(discr1) {
+
     if (isInViewport(discr1)) {
         discr1.classList.add('slide-in-right');
     } else {
         discr1.classList.remove('slide-in-right');
 
     }
+
 }
+
+
+
+
+let ies = document.querySelectorAll('.i');
+let des = document.querySelectorAll('.d');
 
 // Attach the scroll event listener
 document.getElementById('intro').addEventListener('scroll', () => {
 
-    const ies = document.querySelectorAll('.i');
-    const des = document.querySelectorAll('.d');
-    let c = 0;
-   
-    ies.forEach(i=>{
-        handleScroll(i, des[c++]);
+    ies.forEach(i => {
+        handleScroll(i);
 
-    })
+    });
 
+    des.forEach(d => {
 
-})
-
-
-const ies = document.querySelectorAll('.i');
-const des = document.querySelectorAll('.d');
-let c = 0;
-
-ies.forEach(i=>{
-    handleScroll(i, des[c++]);
+        handlediscr(d);
+    });
 
 })
+
+
+
+
+ies.forEach(i => {
+
+    handleScroll(i);
+});
+
+des.forEach(dr => {
+
+    handlediscr(dr);
+});
+
 
 
 let projects = document.querySelector('.projects');

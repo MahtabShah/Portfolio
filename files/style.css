@@ -100,7 +100,8 @@ h1 {
     line-height: 1.6;
 }
 
-h2,h3 {
+h2,
+h3 {
     /* font-size: 24px; */
     line-height: 1.5;
     color: inherit;
@@ -108,7 +109,7 @@ h2,h3 {
 
 p {
     margin-top: 10px;
- 
+
 }
 
 #intro {
@@ -150,7 +151,7 @@ p {
 
 footer {
     background-color: #BF2EF0;
-    
+
     color: white;
     text-align: center;
     padding: 20px 10px;
@@ -199,7 +200,7 @@ footer p {
         height: fit-content;
     }
 
- #myPhoto {
+    #myPhoto {
         min-block-size: auto;
         margin: 0 auto;
         min-width: fit-content;
@@ -225,25 +226,27 @@ footer p {
         border-radius: 0;
     }
 
-    .about-section{
+    .about-section {
         padding: 100px 0;
         margin: 0;
     }
 
-    .chenging{
+    .chenging {
         padding: 0;
     }
 
- 
-    #ver-img{
+
+    #ver-img {
         right: -28;
         min-height: 50px;
         width: 34%;
     }
 
-    .intro-container h1{
+    .intro-container h1 {
 
         text-align: center;
+    }
+
 }
 
 @media(max-width: 580px) {
