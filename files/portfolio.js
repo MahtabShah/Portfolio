@@ -42,10 +42,10 @@ document.getElementById('intro').addEventListener('scroll', () => {
 
 const ies = document.querySelectorAll('.i');
 const des = document.querySelectorAll('.d');
-let c = 0;
+let cr = 0;
 
 ies.forEach(i=>{
-    handleScroll(i, des[c++]);
+    handleScroll(i, des[cr++]);
 
 })
 
