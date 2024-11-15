@@ -89,11 +89,12 @@ header nav ul li a {
     /* background: #f0f0f01a; */
 }
 
-#myPhoto img {
-    border-radius: 10px;
-    scale: 4;
-    margin-bottom: 65px;
+
+   #myPhoto img {
+    scale: 1.5;
+    margin-bottom: -43px;
 }
+
 
 h1 {
     /* font-size: 40px; */
