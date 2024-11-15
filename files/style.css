@@ -197,7 +197,7 @@ footer p {
 @media(max-width: 760px) {
     #sortIntro {
         flex-direction: column;
-        height: fit-content;
+        height: fit-content; 
     }
 
     #myPhoto {
