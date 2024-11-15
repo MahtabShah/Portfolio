@@ -89,9 +89,10 @@ header nav ul li a {
     /* background: #f0f0f01a; */
 }
 
-yPhoto img {
-    scale: 1.5;
-    margin-bottom: -43px;
+#Photo img {
+       scale: 2.45;
+    margin-top: 55px;
+
 }
 
 
